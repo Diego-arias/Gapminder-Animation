@@ -1,6 +1,6 @@
 ---
 title: "Gapminder"
-author: "David Kane"
+author: "Diego Arias"
 date: "9/26/2019"
 output: html_document
 ---
@@ -16,22 +16,7 @@ library(png)
 
 ```
 
-Remember what [we want](http://rpubs.com/dkane/gganimate). You don't need to do these in order. Work on what you like first. Hints:
-
-1. Let's first get the plot looking reasonable for one year (1962) and one continent (Europe). Once it does, we can expand to more continents and years.
-1. Colors are tricky. Try looking for help about the gapminder package. Does it have some built-in colors that might be useful?
-1. Too much opaque overlapping for the datapoints is ugly. Our target has the points as somewhat transparent. How do we achieve that?  
-1. Our target graphic has no legend, which I think is right. How do we turn off the legend?
-1. The target uses data from 3 (?) continents. Filter our data for that case.
-1. How can we create three separate panes?
-1. Note that the ordering of the panes is not alphabetical. What sort of variable is continent and how can we change its ordering?  [R4DS](https://r4ds.had.co.nz/factors.html) is your friend.  
-1. The default breaks in the x-axis are nice in the target animation. How can we make that happen?
-1. Before animating, it can be useful to look at the data for all years and, say, three countries. How do we set that up?
-1. Animation is not that hard. Background reading [here](https://www.datanovia.com/en/blog/gganimate-how-to-create-plots-with-beautiful-animation-in-r/). We need a transition of some kind . . . Which of our variables measures the change in time?  
-1. How can we get the year to show up, and change, in the title?  
-1. Don't forget to add some comments to your code!  
-1. Do this only if you get everything else done. Note how the text in the target plot is bigger. I think it looks better. Recall [chapter 8](https://socviz.co/refineplots.html#refineplots) from Healy and the use of theme().
-
+R
 
 ```{r make_plot}
 gapminder %>% 
